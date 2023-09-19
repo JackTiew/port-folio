@@ -1,7 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
 body,
 html {
 	font-family: 'Teko', sans-serif;
-	font-size: 24px;
+	font-size: 28px;
 }

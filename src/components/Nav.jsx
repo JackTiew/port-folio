@@ -1,11 +1,10 @@
 import '../styles/Nav.css';
-import profilePhoto from '../assets/profile-photo.jpg';
 
 export default function Nav() {
 	return (
 		<div className="nav-bar">
 			<div className="nav-item">
-				<img className="profile-photo" src={profilePhoto} alt="" />
+				<img className="nav-profile-photo" src={`../assets/profile-photo.jpg`} alt="" />
 			</div>
 			<div className="nav-item" style={{ textAlign: 'center' }}>
 				<span className="nav-header">JACKTIEW.DEV</span>
