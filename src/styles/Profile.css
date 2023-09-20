@@ -1,40 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap');
 
-.profile-container {
-	width: 50%;
-	margin: 0 auto;
-}
-
-.profile-header {
+.profile-title {
 	font-family: 'Anton', sans-serif;
 	font-size: 40px;
-}
-
-.flag {
-	width: 36px;
-	height: 36px;
-	border-radius: 100%;
-}
-
-.profile-profile-photo {
-	width: 100%;
-	height: auto;
-	border-radius: 100%;
-}
-
-.profile-icon-container {
-	display: inline-block;
-}
-
-.profile-icon {
-	width: 36px;
-	height: 36px;
-	margin-right: 10px;
-}
-
-.tech-icon {
-	width: 30px;
-	height: 30px;
-	margin: 0 10px;
-	vertical-align: middle;
 }

@@ -7,4 +7,16 @@ body,
 html {
 	font-family: 'Teko', sans-serif;
 	font-size: 28px;
+	color: #FFFFFF;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	cursor: pointer;
+	margin: 0 30px;
 }

@@ -2,56 +2,27 @@ import '../styles/Profile.css';
 
 export default function Profile() {
 
-	// const [profile, setProfile] = useState();
-	const profiles = [
-		{
-			name: "linkedin",
-			link: "https://www.linkedin.com/in/jacktiew96/"
-		},
-		{
-			name: "github",
-			link: "https://github.com/JackTiew"
-	}];
-	const techStack = ["angular", "react", "javascript", "tailwind", "html", "css"];
+	const techStack = ["angular", "react", "ts", "js", "html", "css", "tailwind"];
 
 	return (
-		<div className="profile-container">
-			<div>
-				<div style={{ display: 'inline-block', textAlign: 'left', width: '60%', verticalAlign: "super" }}>
-					<div>
-						<span className="profile-header">
-							Front-End Developer
-						</span>
-					</div>
-					<div style={{ width: '400px' }}>
-						<span>
-							Hi, I'm Jack Tiew. A passionate Front-End
-							Developer based in Kuala Lumpur, Malaysia.
-						</span>
-						<img className="flag" src={`../assets/malaysia.jpg`} alt="" />
-					</div>
-					<div style={{ marginTop: "12px" }}>
-						{
-							profiles.map(profile => (
-								<div className="profile-icon-container">
-									<a href={profile.link} target="_blank">
-										<img className="profile-icon" src={`../assets/${profile.name}.png`} alt=""/>
-									</a>
-								</div>
-							))
-						}
-					</div>
+		<div className="border-8 border-amber-400 w-[1000px] mt-[10px] mx-auto p-5">
+			<div class="grid grid-cols-2 gap-4">
+				<div className="self-center">
+					<span className="profile-title">Front-End Web Developer</span>
+					<img className="w-[100px] h-[100px] mb-[10px]" src={`../assets/coder.png`} alt="" />
+					<span className="text-[30px]">Hi there! I'm Jack Tiew.</span>
+					<br/><span className="text-[30px]">A passionate Front-End Web Developer.</span>
+					<br/><span className="text-[30px]">Based in Malaysia</span>
+					<img className="w-5 h-5 rounded-[100%] inline-block ml-[10px]" src="https://hatscripts.github.io/circle-flags/flags/my.svg" alt="" />
 				</div>
-				<div style={{ display: 'inline-block', width: '40%' }}>
-					<img className="profile-profile-photo" src={`../assets/profile-photo.jpg`} alt="" />
+				<div>
+					<img className="rounded-[100%]" src={`../assets/profile-photo.jpg`} alt="" />
 				</div>
-			</div>
-			<div>
-				<span style={{ display: "inline-block", verticalAlign: "middle" }}>Tech Stack |</span>
-				<div style={{ display: "inline-block" }}>
+				<div class="col-span-2 text-center">
+					<span className="inline-block mr-[20px]">Tech Stack |</span>
 					{
 						techStack.map(tech => (
-							<img className="tech-icon" src={`../assets/${tech}.png`} alt=""/>
+							<img className="inline-block mx-[10px]" src={`https://skillicons.dev/icons?i=${tech}`} alt=""/>
 						))
 					}
 				</div>
