@@ -1,6 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap');
 
+.gold-frame {
+	border-image: linear-gradient(to right, rgb(212,175,55) 0%, rgba(255,179,0,1) 62%, rgba(242,232,22,1) 100%) 1;
+	border-width: 20px;
+}
+
 .profile-title {
 	font-family: 'Anton', sans-serif;
-	font-size: 40px;
+	font-size: 45px;
+}
+
+.typewritter p {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.typewritter p:nth-child(1) {
+	width: 200px;
+	-webkit-animation: type 2s steps(var(--step), end);
+	animation: type 2s steps(var(--step), end);
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+.typewritter p:nth-child(2) {
+	width: 323px;
+	opacity: 0;
+	-webkit-animation: type 3s steps(var(--step), end);
+	animation: type 3s steps(var(--step), end);
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+.typewritter p:nth-child(3) {
+	width: 200px;
+	opacity: 0;
+	-webkit-animation: type 2s steps(var(--step), end);
+	animation: type 2s steps(var(--step), end);
+	-webkit-animation-delay: 5s;
+	animation-delay: 5s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@keyframes type {
+	0% {
+		opacity: 1;
+		width: 0;
+		border-right: .15em solid var(--white);
+	}
+	99.9% {
+		border-right: .15em solid var(--white);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes type {
+	0% {
+		opacity: 1;
+		width: 0;
+		border-right: .15em solid var(--white);
+	}
+	99.9% {
+		border-right: .15em solid var(--white);
+	}
+	100% {
+		opacity: 1;
+	}
 }

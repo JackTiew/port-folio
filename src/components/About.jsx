@@ -1,6 +1,6 @@
 export default function About() {
 	return (
-		<div style={{ height: "300px" }}>
+		<div className="h-screen">
 			I'm About
 		</div>
 	);
