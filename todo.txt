@@ -1,5 +1,3 @@
-make stick together?
-border comes in from left?
-github and linkedin
+reveal with pop up
 
-contact
+profile border comes in from left?

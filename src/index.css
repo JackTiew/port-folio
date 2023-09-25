@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 :root {
 	--white: #FFFFFF;
@@ -12,8 +12,8 @@
 
 body,
 html {
-	font-family: 'Teko', sans-serif;
-	font-size: 28px;
+	font-family: 'Mulish', sans-serif;
+	font-size: 18px;
 	color: var(--white);
 }
 

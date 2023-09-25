@@ -1,24 +1,53 @@
+import { Fragment, useEffect, useState } from "react";
+import "../styles/Nav.css"
+
 export default function Nav({navigate}) {
+
+	const [showMenu, setShowMenu] = useState(false);
+
+	const toggleMenu = () => setShowMenu(!showMenu);
+
+	useEffect(() => {
+		const handleWindowResize = () => {
+			setShowMenu(false);
+		};
+	
+		window.addEventListener('resize', handleWindowResize);
+	
+		return () => {
+			window.removeEventListener('resize', handleWindowResize);
+		};
+	});
+
 	return (
-		<div className="flex h-[75px] items-center">
-			<div className="ml-[50px] w-1/4">
-				<span className="cursor-pointer">JACKTIEW.DEV</span>
+		<Fragment>
+			<div className={`
+				flex h-[75px] items-center justify-center bg-black
+				md:bg-transparent`
+			}>
+				<span className="header-font">JACKTIEW.DEV</span>
 			</div>
-			<div className="text-right flex-none w-3/4">
-				{/* <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-					<span class="sr-only">Open main menu</span>
-					<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-					</svg>
-				</button> */}
-				<div className="hidden sm:block" id="navbar">
+			<div className="absolute top-0 right-0 h-[75px] block md:hidden">
+				<div className="h-[100%] flex items-center mr-[15px]">
+					<img
+						className="h-[36px] w-[36px] cursor-pointer"
+						src={`../assets/icons/menu-icon.svg`}
+						alt=""
+						onClick={toggleMenu}	
+					/>
+				</div>
+			</div>
+			<div className={`
+				absolute text-center left-0 right-0 bg-black md:opacity-100 ${showMenu ? "show" : "hide"}-menu
+				md:bg-transparent md:block md:top-0 md:h-[75px] md:left-auto`
+			}>
+				<div className={`h-[100%] md:flex md:items-center`}>
 					<ul>
-						<li className="inline" onClick={() => navigate("about")}>About</li>
-						<li className="inline" onClick={() => navigate("project")}>Projects</li>
-						<li className="inline" onClick={() => navigate("contact")}>Contact</li>
+						<li className="block my-[10px] md:inline md:my-0 header-font text-[28px]" onClick={() => navigate("about")}>About</li>
+						<li className="block my-[10px] md:inline md:my-0 header-font text-[28px]" onClick={() => navigate("project")}>Projects</li>
 					</ul>
 				</div>
 			</div>
-		</div>
+		</Fragment>
 	);
 }

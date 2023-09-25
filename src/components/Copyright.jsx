@@ -8,7 +8,7 @@ export default function Copyright({navigate}) {
 		<div className="h-[75px] items-center bg-black">
 			<div className="flex justify-center items-center h-full">
 				<span>Copyright © 2023. All rights are reserved</span>
-				<div className="absolute right-[50px]">
+				<div className="absolute right-[50px] opacity-0 md:opacity-100">
 					<img 
 						className="icon cursor-pointer commonButton"
 						src={`../assets/icons/arrow-up.svg`}

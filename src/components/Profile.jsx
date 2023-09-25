@@ -1,18 +1,58 @@
+import { useState } from 'react';
 import '../styles/Profile.css';
 
 export default function Profile() {
 
 	const techStack = ["angular", "react", "ts", "js", "html", "css", "tailwind"];
+	const profiles = [
+		{ name: "linkedin", url: "https://www.linkedin.com/in/jacktiew96/" },
+		{ name: "github", url: "https://github.com/JackTiew" },
+	];
+
+	const [showEmail, setShowEmail] = useState(false);
+
+	const toggleEmail = () => {
+		setShowEmail(!showEmail);
+	}
 
 	return (
 		<div className="gold-frame w-[calc(100%-300px)] mt-[10px] mx-auto h-[calc(100%-150px)]">
 			<div className="relative max-w-[100%] w-[80%] min-w-[1200px] mx-auto h-full">
 				<div className="grid grid-cols-2 gap-0 p-5">
 					<div className="ml-[20%] mt-[40px]">
-						<div className="mb-[50px]">
-							<span className="profile-title">Front-End Web Developer</span>
+						<span className="profile-title">Front-End Web Developer</span>
+						<div className="my-[30px]">
+							<img className="w-[100px] h-[100px] inline-block mr-[40px]" src={`../assets/coder.png`} alt="" />
+							<div className="inline-block align-bottom">
+								{
+									profiles.map(profile => (
+										<a href={profile.url} target="_blank" rel="noreferrer">
+											<img 
+												alt=""
+												className="w-[48px] h-[48px] cursor-pointer commonButton inline-block mx-[5px]"
+												key={profile.name}
+												src={`../assets/icons/${profile.name}-white.svg`}
+												onMouseOver={e => e.currentTarget.src = `../assets/icons/${profile.name}-color.svg`}
+												onMouseOut={e => e.currentTarget.src = `../assets/icons/${profile.name}-white.svg`}
+											/>
+										</a>
+									))
+								}
+								<img 
+									alt=""
+									className="w-[48px] h-[48px] cursor-pointer commonButton inline-block mx-[5px]"
+									src={`../assets/icons/gmail-white.svg`}
+									onMouseOver={e => e.currentTarget.src = `../assets/icons/gmail-color.svg`}
+									onMouseOut={e => e.currentTarget.src = `../assets/icons/gmail-white.svg`}
+									onClick={toggleEmail}
+								/>
+								{showEmail && 
+									<div>
+										jack.tiew.tc@gmail.com
+									</div>
+								}
+							</div>
 						</div>
-						<img className="w-[100px] h-[100px] mb-[10px]" src={`../assets/coder.png`} alt="" />
 						<div className="typewritter">
 							<p>Hi there! I'm Jack Tiew.</p>
 							<p>A passionate Front-End Web Developer.</p>
