@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
 :root {
 	--white: #FFFFFF;
@@ -69,4 +70,10 @@ li {
 	40%, 60% {
 		transform: translate3d(2px, 0, 0);
 	}
+}
+
+.header-font {
+    font-family: 'Teko', sans-serif;
+    cursor: pointer;
+    font-size: 40px;
 }

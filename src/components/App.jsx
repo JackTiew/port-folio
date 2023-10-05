@@ -46,9 +46,9 @@ export default function App() {
 					<Nav navigate={navigateTo} />
 					{/* <Profile /> */}
 			</div>
-			{/* <div ref={aboutRef}>
+			<div ref={aboutRef}>
 				<About />
-			</div> */}
+			</div>
 			<div ref={projectRef}>
 				<Project />
 			</div>
