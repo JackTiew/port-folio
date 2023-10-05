@@ -44,7 +44,7 @@ export default function App() {
 				className="h-screen"
 				style={{ background: styles[randValue] }}>
 					<Nav navigate={navigateTo} />
-					{/* <Profile /> */}
+					<Profile />
 			</div>
 			<div ref={aboutRef}>
 				<About />

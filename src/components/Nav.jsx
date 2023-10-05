@@ -25,7 +25,7 @@ export default function Nav({navigate}) {
 				flex h-[75px] items-center justify-center bg-black
 				md:bg-transparent`
 			}>
-				<span className="header-font">JACKTIEW.DEV</span>
+				<span className="header-font text-[40px]">JACKTIEW.DEV</span>
 			</div>
 			<div className="absolute top-0 right-0 h-[75px] block md:hidden">
 				<div className="h-[100%] flex items-center mr-[15px]">
