@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
-import "../styles/Nav.css"
+// import "../styles/Nav.css"
 
 export default function Nav({navigate}) {
 

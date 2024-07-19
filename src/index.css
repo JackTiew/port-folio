@@ -4,21 +4,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
-:root {
+/* :root {
 	--white: #FFFFFF;
 	--step: 30;
 	--color-primary: #000000;
 	--color-secondary: 
-}
+} */
 
 body,
 html {
 	font-family: 'Mulish', sans-serif;
 	font-size: 18px;
-	color: var(--white);
+	color: #FFFFFF;
 }
 
-ul {
+/* ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -75,4 +75,4 @@ li {
 .header-font {
     font-family: 'Teko', sans-serif;
     cursor: pointer;
-}
+} */
