@@ -1,9 +1,9 @@
 .profile-header {
     @apply pt-[10px];
     @apply text-[40px];
-    @apply text-center;
     @apply text-[var(--white)];
     @apply font-[var(--anton)];
+    @apply text-center;
 }
 
 .profile-container {
@@ -53,9 +53,9 @@
 }
 
 .profile-link-container {
+    @apply pt-[35px];
     @apply flex;
     @apply items-center;
-    @apply pt-[35px];
 }
 
 .profile-skills-container {
