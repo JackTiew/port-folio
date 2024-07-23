@@ -3,38 +3,34 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap');
 
-/* :root {
-	--white: #FFFFFF;
-	--step: 30;
+:root {
+	--white: #F9F9F9;
+	--black: #000000;
+	--mulish: 'Mulish', sans-serif;
+	--teko: 'Teko', sans-serif;
+	--anton: 'Anton', sans-serif;
+
+	/* --step: 30;
 	--color-primary: #000000;
-	--color-secondary: 
-} */
+	--color-secondary:  */
+}
 
 body,
 html {
-	font-family: 'Mulish', sans-serif;
-	font-size: 18px;
-	color: #FFFFFF;
+	font-family: var(--teko);
+	font-size: 1.5rem;
+	color: var(--black);
 }
 
-/* ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+.center {
+	@apply flex;
+	@apply justify-center;
+	@apply items-center;
 }
 
-li {
-	cursor: pointer;
-	margin: 0 30px;
-}
-
-.icon {
-	width: 48px;
-	height: 48px;
-}
-
-.commonButton:hover {
+.shake-button:hover {
 	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 	transform: translate3d(0, 0, 0);
 	perspective: 1000px;
@@ -54,6 +50,22 @@ li {
 	40%, 60% {
 		transform: translate3d(2px, 0, 0);
 	}
+}
+
+/* ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	cursor: pointer;
+	margin: 0 30px;
+}
+
+.icon {
+	width: 48px;
+	height: 48px;
 }
 
 @-webkit-keyframes shake {

@@ -1,0 +1,63 @@
+.profile-header {
+    @apply pt-[10px];
+    @apply text-[40px];
+    @apply text-center;
+    @apply text-[var(--white)];
+    @apply font-[var(--anton)];
+}
+
+.profile-container {
+    @apply h-[100dvh];
+    background: linear-gradient(0.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%);
+}
+
+@property --direc {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.profile-background {
+    --direc: 0deg;
+    @apply mt-[5dvh];
+    @apply h-[80dvh];
+    @apply w-[70dvw];
+    @apply rounded-[25px];    
+    @apply text-[var(--white)];
+    background-image: linear-gradient(var(--direc), red 0%, orange 50%, yellow 100%);
+    animation: rotate 2s linear infinite;
+}
+
+.profile-card {
+    @apply py-[60px];
+    @apply px-[100px];
+    @apply w-[98%];
+    @apply h-[95%];
+    @apply rounded-[15px];
+    @apply grid;
+    background: linear-gradient(0.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%);
+    grid-template-columns: 1.25fr 0.75fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+}
+
+@keyframes rotate {
+    to {
+        --direc: 360deg;
+    }
+}
+
+.profile-info-container {
+    @apply flex;
+    @apply justify-center;
+    @apply flex-col;
+}
+
+.profile-link-container {
+    @apply flex;
+    @apply items-center;
+    @apply pt-[35px];
+}
+
+.profile-skills-container {
+    grid-column: span 3;
+}
