@@ -1,0 +1,12 @@
+.work-panel {
+  background:
+    radial-gradient(ellipse 50% 30% at 100% 80%, rgba(34, 211, 238, 0.1), transparent),
+    var(--bg);
+}
+
+@media (min-width: 48rem) {
+  .work-panel .section-inner {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}

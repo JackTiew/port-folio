@@ -1,0 +1,62 @@
+@media (min-width: 48rem) {
+  .component-item {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .component-item.scroll-up {
+    animation: section-scroll 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .component-item.scroll-down {
+    animation: section-scroll 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .component-item.scroll-hide {
+    animation: section-scroll-hide 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes section-scroll {
+    to {
+      height: 100dvh;
+    }
+  }
+
+  @keyframes section-scroll-hide {
+    0% {
+      height: 100dvh;
+    }
+
+    100% {
+      height: 0;
+    }
+  }
+
+  .section-panel {
+    height: 100dvh;
+  }
+}
+
+.section-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 1.5rem 2rem;
+  background: var(--bg);
+}
+
+@media (min-width: 48rem) {
+  .section-panel {
+    padding: 7rem 2.5rem 2.5rem;
+  }
+}
+
+.section-inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 72rem;
+}
+
+.site-header {
+  background: linear-gradient(to bottom, var(--bg) 40%, transparent);
+}

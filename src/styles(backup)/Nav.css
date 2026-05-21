@@ -1,9 +1,0 @@
-.show-menu {
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.hide-menu {
-    opacity: 0;
-    /* transition: 0.5s; */
-}

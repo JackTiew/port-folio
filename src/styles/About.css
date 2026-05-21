@@ -1,0 +1,5 @@
+.about-panel {
+  background:
+    radial-gradient(ellipse 60% 40% at 0% 50%, rgba(99, 102, 241, 0.12), transparent),
+    var(--bg);
+}
