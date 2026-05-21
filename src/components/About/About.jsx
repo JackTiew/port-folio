@@ -3,7 +3,7 @@ import { about } from "../../data/portfolio";
 const About = () => {
   return (
     <section className="section-panel about-panel">
-      <div className="section-inner flex min-h-0 flex-1 flex-col justify-center gap-6">
+      <div className="section-inner flex min-h-0 flex-1 flex-col justify-center gap-4">
         <div>
           <p className="mb-2 font-mono text-sm text-[var(--accent)]">
             01 — {about.title}
@@ -20,7 +20,7 @@ const About = () => {
           {about.strengths.map((item) => (
             <article
               key={item.title}
-              className="rounded-2xl border border-[var(--border)] bg-[var(--surface)]/70 p-6 backdrop-blur-sm transition hover:border-[var(--accent)]/40"
+              className="rounded-2xl border border-[var(--border)] bg-[var(--surface)]/70 p-4 backdrop-blur-sm transition hover:border-[var(--accent)]/40 sm:p-5"
             >
               <h3 className="font-display text-xl font-semibold text-[var(--text)]">
                 {item.title}
@@ -29,12 +29,6 @@ const About = () => {
                 {item.description}
               </p>
             </article>
-          ))}
-        </div>
-
-        <div className="space-y-4 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
-          {about.paragraphs.map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
           ))}
         </div>
       </div>

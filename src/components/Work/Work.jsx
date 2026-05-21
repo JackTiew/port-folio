@@ -7,10 +7,10 @@ const Work = () => {
       <div className="section-inner flex min-h-0 flex-1 flex-col justify-center gap-8 py-4">
         <div>
           <p className="mb-2 font-mono text-sm text-[var(--accent)]">
-            02 — Some of my works
+            02 — Works
           </p>
           <h2 className="font-display text-4xl font-bold text-[var(--text)] sm:text-5xl">
-            Work
+            Some of my Works
           </h2>
           <p className="mt-3 max-w-2xl text-[var(--muted)]">
             Side projects and experiments—games, tools, and UI builds shipped to
