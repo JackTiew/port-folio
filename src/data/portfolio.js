@@ -87,6 +87,18 @@ export const projects = [
     tech: ["react", "ts", "tailwind"],
     liveUrl: "https://marketplace.lessen.com/",
     repoUrl: null,
+    linkLabel: "Visit site",
+    status: "Live",
+  },
+  {
+    id: "tarcalumni",
+    title: "TARC Alumni",
+    description:
+      "A website for TARC alumni to organize events, browse association updates, and look up member information in one place.",
+    tech: ["react", "ts", "tailwind"],
+    liveUrl: "https://tarcalumni.my/",
+    repoUrl: null,
+    linkLabel: "Visit site",
     status: "Live",
   },
   {
@@ -126,16 +138,6 @@ export const projects = [
       "A playful language-learning game for kids—practice words and phrases through simple, friendly interactions.",
     tech: ["react", "js", "html", "css"],
     liveUrl: "https://simple-game-sooty.vercel.app/",
-    repoUrl: null,
-    status: "Live",
-  },
-  {
-    id: "snake-game",
-    title: "Snake Game",
-    description:
-      "A browser remake of the classic snake arcade game—eat, grow, and avoid collisions in a nostalgic loop.",
-    tech: ["js", "html", "css"],
-    liveUrl: "https://snake-game-iota-lac.vercel.app/",
     repoUrl: null,
     status: "Live",
   },
