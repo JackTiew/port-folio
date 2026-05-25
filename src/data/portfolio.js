@@ -102,6 +102,17 @@ export const projects = [
     status: "Live",
   },
   {
+    id: "scanunlimited",
+    title: "ScanUnlimited",
+    description:
+      "A wholesale sourcing tool that quickly scans and analyzes product lists to help sellers find the most profitable, fast-selling items—with a large community of walkthroughs and discussion on YouTube.",
+    tech: ["react", "ts", "tailwind"],
+    liveUrl: "https://www.spscommerce.com/products/scanunlimited/",
+    repoUrl: null,
+    linkLabel: "Visit site",
+    status: "Live",
+  },
+  {
     id: "car-showcase",
     title: "Car Hub",
     description:
@@ -128,16 +139,6 @@ export const projects = [
       "A curated library of the latest technologies and polished UI patterns—inspiration and references in one place.",
     tech: ["react", "ts", "tailwind"],
     liveUrl: "https://my-library-azure.vercel.app/home",
-    repoUrl: null,
-    status: "Live",
-  },
-  {
-    id: "simple-game",
-    title: "Simple Kids Game",
-    description:
-      "A playful language-learning game for kids—practice words and phrases through simple, friendly interactions.",
-    tech: ["react", "js", "html", "css"],
-    liveUrl: "https://simple-game-sooty.vercel.app/",
     repoUrl: null,
     status: "Live",
   },
